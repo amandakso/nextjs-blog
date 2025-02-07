@@ -1,5 +1,5 @@
 ---
-title: "First Blog Post"
+title: "Chapter One: Welcome to My World of Stories, Stitches, and Savored Adventures"
 date: "2025-01-05"
 ---
 
