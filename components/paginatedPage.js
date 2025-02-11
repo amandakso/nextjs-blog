@@ -128,3 +128,5 @@ const PaginatedPosts = ({ posts, pagination }) => {
     </div>
   );
 };
+
+export default PaginatedPosts;
