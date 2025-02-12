@@ -7,6 +7,7 @@ import {
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Date from "./date";
+import styles from "./paginatedPage.module.css";
 
 const PaginatedPosts = ({ posts, pagination }) => {
   const router = useRouter();
@@ -16,10 +17,7 @@ const PaginatedPosts = ({ posts, pagination }) => {
     {
       accessorKey: "title",
       cell: ({ row }) => (
-        <Link
-          href={`/posts/${row.original.id}`}
-          className="hover:text-blue-600"
-        >
+        <Link href={`/posts/${row.original.id}`} className={styles.postLink}>
           {row.original.title}
         </Link>
       ),
@@ -27,7 +25,7 @@ const PaginatedPosts = ({ posts, pagination }) => {
     {
       accessorKey: "date",
       cell: ({ row }) => (
-        <small className="text-gray-500">
+        <small className={styles.postDate}>
           <Date dateString={row.original.date} />
         </small>
       ),
@@ -62,9 +60,18 @@ const PaginatedPosts = ({ posts, pagination }) => {
   });
 
   return (
-    <div>
-      <div className="mb-4">
-        <p className="text-sm text-gray-600">
+    <div className={styles.container}>
+      <div className={styles.postsList}>
+        {table.getRowModel().rows.map((row) => (
+          <div key={row.id} className={styles.postItem}>
+            {flexRender(columns[0].cell, { row })}
+            <br />
+            {flexRender(columns[1].cell, { row })}
+          </div>
+        ))}
+      </div>
+      <div className={styles.postCount}>
+        <p>
           Showing{" "}
           {table.getState().pagination.pageSize * (pagination.currentPage - 1) +
             1}{" "}
@@ -76,34 +83,23 @@ const PaginatedPosts = ({ posts, pagination }) => {
           of {pagination.totalPosts} posts
         </p>
       </div>
-
-      <div className="mb-8">
-        {table.getRowModel().rows.map((row) => (
-          <div key={row.id} className="py-4 border-b">
-            {flexRender(columns[0].cell, { row })}
-            <br />
-            {flexRender(columns[1].cell, { row })}
-          </div>
-        ))}
-      </div>
-
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <button
-            className="px-3 py-1 rounded border disabled:opacity-50"
-            onClick={() => table.previousPage()}
-            disabled={!table.getCanPreviousPage()}
-          >
-            Previous
-          </button>
+      <div className={styles.paginationContainer}>
+        <button
+          className={styles.button}
+          onClick={() => table.previousPage()}
+          disabled={!table.getCanPreviousPage()}
+        >
+          Previous
+        </button>
+        <div className={styles.numberContainer}>
           {Array.from({ length: totalPages }, (_, i) => i + 1).map(
             (pageNumber) => (
               <button
                 key={pageNumber}
-                className={`px-3 py-1 rounded border ${
+                className={`${styles.numberButton} ${
                   pagination.currentPage === pageNumber
-                    ? "bg-blue-500 text-white"
-                    : "hover:bg-gray-100"
+                    ? styles.activeButton
+                    : ""
                 }`}
                 onClick={() => {
                   router.push({
@@ -116,14 +112,14 @@ const PaginatedPosts = ({ posts, pagination }) => {
               </button>
             )
           )}
-          <button
-            className="px-3 py-1 rounded border disabled:opacity-50"
-            onClick={() => table.nextPage()}
-            disabled={!table.getCanNextPage()}
-          >
-            Next
-          </button>
         </div>
+        <button
+          className={styles.button}
+          onClick={() => table.nextPage()}
+          disabled={!table.getCanNextPage()}
+        >
+          Next
+        </button>
       </div>
     </div>
   );
