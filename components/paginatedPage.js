@@ -61,6 +61,15 @@ const PaginatedPosts = ({ posts, pagination }) => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.postsList}>
+        {table.getRowModel().rows.map((row) => (
+          <div key={row.id} className={styles.postItem}>
+            {flexRender(columns[0].cell, { row })}
+            <br />
+            {flexRender(columns[1].cell, { row })}
+          </div>
+        ))}
+      </div>
       <div className={styles.postCount}>
         <p>
           Showing{" "}
@@ -74,17 +83,6 @@ const PaginatedPosts = ({ posts, pagination }) => {
           of {pagination.totalPosts} posts
         </p>
       </div>
-
-      <div className={styles.postsList}>
-        {table.getRowModel().rows.map((row) => (
-          <div key={row.id} className={styles.postItem}>
-            {flexRender(columns[0].cell, { row })}
-            <br />
-            {flexRender(columns[1].cell, { row })}
-          </div>
-        ))}
-      </div>
-
       <div className={styles.paginationContainer}>
         <button
           className={styles.button}
@@ -93,7 +91,6 @@ const PaginatedPosts = ({ posts, pagination }) => {
         >
           Previous
         </button>
-
         <div className={styles.numberContainer}>
           {Array.from({ length: totalPages }, (_, i) => i + 1).map(
             (pageNumber) => (
@@ -116,7 +113,6 @@ const PaginatedPosts = ({ posts, pagination }) => {
             )
           )}
         </div>
-
         <button
           className={styles.button}
           onClick={() => table.nextPage()}
