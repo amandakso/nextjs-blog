@@ -1,0 +1,89 @@
+.container {
+  margin-top: 2rem;
+}
+
+.postCount {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.postsList {
+  margin-bottom: 2rem;
+}
+
+.postItem {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 2rem;
+}
+
+.numberContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.numberButton {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.numberButton:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.activeButton {
+  background-color: #0070f3;
+  color: white;
+  border-color: #0070f3;
+}
+
+.activeButton:hover {
+  background-color: #0060df;
+  border-color: #0060df;
+}
+
+.postLink {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.postLink:hover {
+  text-decoration: underline;
+}
+
+.postDate {
+  color: #666;
+}
