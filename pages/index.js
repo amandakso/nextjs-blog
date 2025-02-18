@@ -23,19 +23,21 @@ export async function getServerSideProps({ query }) {
       limit
     );
 
-    // Ensure all post data is serializable
-    const serializedPosts = posts.map((post) => {
-      return Object.entries(post).reduce((acc, [key, value]) => {
-        acc[key] = value ?? null; // Convert undefined to null
-        return acc;
-      }, {});
-    });
-
+    // Ensure all data is serializable
     return {
       props: {
-        posts: serializedPosts,
-        pagination,
-        metadata,
+        posts: posts || [],
+        pagination: pagination || {
+          currentPage: 1,
+          totalPages: 0,
+          totalPosts: 0,
+          postsPerPage: limit,
+        },
+        metadata: metadata || {
+          mainCategories: [],
+          subCategories: [],
+          series: [],
+        },
       },
     };
   } catch (error) {
@@ -59,7 +61,7 @@ export async function getServerSideProps({ query }) {
   }
 }
 
-export default function Home({ posts, pagination }) {
+export default function Home({ posts, pagination, metadata }) {
   return (
     <Layout home>
       <Head>
@@ -73,7 +75,11 @@ export default function Home({ posts, pagination }) {
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog Posts</h2>
-        <PaginatedPosts posts={posts} pagination={pagination} />
+        <PaginatedPosts
+          posts={posts}
+          pagination={pagination}
+          metadata={metadata}
+        />
       </section>
     </Layout>
   );

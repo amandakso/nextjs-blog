@@ -17,7 +17,10 @@ const PaginatedPosts = ({ posts, pagination }) => {
     {
       accessorKey: "title",
       cell: ({ row }) => (
-        <Link href={`/posts/${row.original.id}`} className={styles.postLink}>
+        <Link
+          href={`/posts/${row.original.id.split("/").join("/")}`}
+          className={styles.postLink}
+        >
           {row.original.title}
         </Link>
       ),

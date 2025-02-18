@@ -5,7 +5,12 @@ import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllPostIds().map((path) => ({
+    params: {
+      slug: path.params.id.split("/"),
+    },
+  }));
+
   return {
     paths,
     fallback: false,
@@ -13,7 +18,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const id = Array.isArray(params.slug) ? params.slug.join("/") : params.slug;
+  const postData = await getPostData(id);
+
   return {
     props: {
       postData,
