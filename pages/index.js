@@ -14,17 +14,49 @@ import PaginatedPosts from "../components/paginatedPage";
 // }
 
 export async function getServerSideProps({ query }) {
-  const page = parseInt(query.page) || 1;
-  const limit = 5; // Posts per page
+  try {
+    const page = parseInt(query.page) || 1;
+    const limit = 5; // Posts per page
 
-  const { posts, pagination } = await getPaginatedPosts(page, limit);
+    const { posts, pagination, metadata } = await getPaginatedPosts(
+      page,
+      limit
+    );
 
-  return {
-    props: {
-      posts,
-      pagination,
-    },
-  };
+    // Ensure all post data is serializable
+    const serializedPosts = posts.map((post) => {
+      return Object.entries(post).reduce((acc, [key, value]) => {
+        acc[key] = value ?? null; // Convert undefined to null
+        return acc;
+      }, {});
+    });
+
+    return {
+      props: {
+        posts: serializedPosts,
+        pagination,
+        metadata,
+      },
+    };
+  } catch (error) {
+    console.error("Error in getServerSideProps:", error);
+    return {
+      props: {
+        posts: [],
+        pagination: {
+          currentPage: 1,
+          totalPages: 0,
+          totalPosts: 0,
+          postsPerPage: 5,
+        },
+        metadata: {
+          mainCategories: [],
+          subCategories: [],
+          series: [],
+        },
+      },
+    };
+  }
 }
 
 export default function Home({ posts, pagination }) {
