@@ -14,20 +14,54 @@ import PaginatedPosts from "../components/paginatedPage";
 // }
 
 export async function getServerSideProps({ query }) {
-  const page = parseInt(query.page) || 1;
-  const limit = 5; // Posts per page
+  try {
+    const page = parseInt(query.page) || 1;
+    const limit = 5; // Posts per page
 
-  const { posts, pagination } = await getPaginatedPosts(page, limit);
+    const { posts, pagination, metadata } = await getPaginatedPosts(
+      page,
+      limit
+    );
 
-  return {
-    props: {
-      posts,
-      pagination,
-    },
-  };
+    // Ensure all data is serializable
+    return {
+      props: {
+        posts: posts || [],
+        pagination: pagination || {
+          currentPage: 1,
+          totalPages: 0,
+          totalPosts: 0,
+          postsPerPage: limit,
+        },
+        metadata: metadata || {
+          mainCategories: [],
+          subCategories: [],
+          series: [],
+        },
+      },
+    };
+  } catch (error) {
+    console.error("Error in getServerSideProps:", error);
+    return {
+      props: {
+        posts: [],
+        pagination: {
+          currentPage: 1,
+          totalPages: 0,
+          totalPosts: 0,
+          postsPerPage: 5,
+        },
+        metadata: {
+          mainCategories: [],
+          subCategories: [],
+          series: [],
+        },
+      },
+    };
+  }
 }
 
-export default function Home({ posts, pagination }) {
+export default function Home({ posts, pagination, metadata }) {
   return (
     <Layout home>
       <Head>
@@ -41,7 +75,11 @@ export default function Home({ posts, pagination }) {
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog Posts</h2>
-        <PaginatedPosts posts={posts} pagination={pagination} />
+        <PaginatedPosts
+          posts={posts}
+          pagination={pagination}
+          metadata={metadata}
+        />
       </section>
     </Layout>
   );
