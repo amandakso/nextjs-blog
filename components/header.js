@@ -10,7 +10,7 @@ export default function Header() {
             <Link href="/">Amanda's Blog Site</Link>
           </div>
           <div className={styles.navLinks}>
-            <Link href="/" className={styles.navLink}>
+            <Link href="/posts" className={styles.navLink}>
               Blog
             </Link>
             <Link href="/about" className={styles.navLink}>
