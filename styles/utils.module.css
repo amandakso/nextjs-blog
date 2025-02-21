@@ -50,3 +50,13 @@
 .lightText {
   color: #666;
 }
+
+.footerContainer {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.footerText {
+  text-align: center;
+  color: #6b7280;
+}
