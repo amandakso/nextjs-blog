@@ -79,6 +79,7 @@ export default function Home({ posts, pagination, metadata }) {
           posts={posts}
           pagination={pagination}
           metadata={metadata}
+          path="/"
         />
       </section>
     </Layout>

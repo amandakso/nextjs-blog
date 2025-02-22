@@ -9,7 +9,7 @@ import Link from "next/link";
 import Date from "./date";
 import styles from "./paginatedPage.module.css";
 
-const PaginatedPosts = ({ posts, pagination }) => {
+const PaginatedPosts = ({ posts, pagination, path }) => {
   const router = useRouter();
   const { totalPages } = pagination;
 
@@ -55,7 +55,7 @@ const PaginatedPosts = ({ posts, pagination }) => {
           pageSize: pagination.postsPerPage,
         }).pageIndex;
         router.push({
-          pathname: "/",
+          pathname: path,
           query: { page: newPageIndex + 1 },
         });
       }
@@ -106,7 +106,7 @@ const PaginatedPosts = ({ posts, pagination }) => {
                 }`}
                 onClick={() => {
                   router.push({
-                    pathname: "/",
+                    pathname: path,
                     query: { page: pageNumber },
                   });
                 }}
