@@ -51,6 +51,36 @@
   color: #666;
 }
 
+/** header layout*/
+.navHeader {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1rem;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLink:hover {
+  color: #4b5563; /* gray-600 */
+}
+
+/* footer layout*/
+
 .footerContainer {
   margin: 0 auto;
   padding: 2rem 1rem;

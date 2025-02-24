@@ -4,6 +4,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "./footer";
+import Header from "./header";
 
 const name = "Amanda's Blog";
 export const siteTitle = "Amanda's Blog Site";
@@ -26,6 +27,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <Header />
       <div className={styles.container}>
         <header className={styles.header}>
           {home ? (
