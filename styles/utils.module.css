@@ -73,10 +73,12 @@
 .navLinks {
   display: flex;
   gap: 1rem;
+  text-decoration: none;
 }
 
 .navLink:hover {
   color: #4b5563; /* gray-600 */
+  text-decoration: none;
 }
 
 /* footer layout*/
