@@ -9,17 +9,17 @@ February was a stellar reading month featuring three 5-star reads that exceeded 
 
 #### February's Literary Landscape
 
-- Books Read:
-- Average Rating:
+- Books Read: 8
+- Average Rating: 3.97
 - Favorite Book of the Month: _Sword of Kaigen_
 - Honorable Mentions: _The Fox Wife_, _All Systems Red_, and _Assassin's Apprentice_
-- Genre Breakdown: 3 Fantasy, 2 Romance, 1 Sci-Fi, 1 Literary Fiction
+- Genre Breakdown: 3 Fantasy, 2 Romance, 1 Sci-Fi, 1 Literary Fiction, 1 Thriller
 
 #### February's Literary Expedition: Field Notes
 
 - _The Fox Wife_ by Yangsze Choo (4.5/5 ⭐):
 
-  > Absolutely obsessed enchanting story centered on Chinese fox folklore. While the dual POV narrative occasionally slowed the pacing, I became completely absorbed in this atmospheric winter fantasy. The exploration of grief and healing resonated deeply, and though the plot was somewhat predictable, I can't imagine the story unfolding any other way. A near-perfect standalone perfect to curl up with during the winter months.
+  > Absolutely obsessed with this enchanting story centered on Chinese fox folklore. While the dual POV narrative occasionally slowed the pacing, I became completely absorbed in this atmospheric winter fantasy. The exploration of grief and healing resonated deeply, and though the plot was somewhat predictable, I can't imagine the story unfolding any other way. A near-perfect standalone that's made for curling up with during the winter months.
 
 - _The Sword of Kaigen_ by M.L. Wang (5/5 ⭐):
 
@@ -42,7 +42,12 @@ February was a stellar reading month featuring three 5-star reads that exceeded 
   > An incredible start to a highly anticipated series. Hobb's intricate worldbuilding left me eager to discover more as the series progresses. This slower-paced, character-driven fantasy still delivers emotional impact with an engaging plot. The relationships and political machinations are masterfully crafted, making this a standout beginning to what promises to be an epic journey.
 
 - _Yours Truly_ by Abby Jimenez (4/5 ⭐):
+
   > A charming romance with excellent chemistry between the main characters. Their mutual care and compatibility shone throughout the story. While the plot occasionally felt overloaded with tropes and the healthcare setting contained some distracting inaccuracies, I enjoyed this significantly more than the first book in these interconnected standalones. A solid Valentine's month read.
+
+- _All In_ by Jennifer Lynn Barnes (3.5/5 ⭐):
+
+  > A welcome return to the mystery/thriller elements that made the first book shine, after the romance-heavy second installment. This Sloane-centered story successfully converges several overarching plots while maintaining an engaging pace. An entertaining quick read that, while not reaching the heights of the series opener, delivered a solid middle-series installment.
 
 ### February's Literary Souvenirs
 
