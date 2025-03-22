@@ -1,7 +1,7 @@
 ---
 title: "Test Draft Post"
 date: "2025-03-21"
-draft: "true"
+draft: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat blandit pretium. Morbi lobortis suscipit nulla, vitae imperdiet magna porttitor sit amet. Vivamus sollicitudin dui eu nunc facilisis iaculis. Suspendisse potenti. Vivamus eleifend vulputate felis eget venenatis. Ut sapien lectus, malesuada vel turpis id, ullamcorper facilisis est. Sed cursus blandit metus sed aliquam. Donec nunc erat, molestie nec mauris eget, dapibus porta mauris. Morbi sed consectetur ligula.
