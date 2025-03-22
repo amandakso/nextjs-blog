@@ -1,6 +1,6 @@
 ---
 title: "month-year-monthly-wrap.md"
-date: ""
+date: "YYYY-MM-DD"
 ---
 
 ### Monthly Reads in Detail
