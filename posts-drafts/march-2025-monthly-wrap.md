@@ -37,6 +37,8 @@ A Japanese translated work with people seeking out a clinic to solve their probl
 _His Majesty's Dragon_ by Naomi Novik (4/5 ⭐):
 A really fun dragon book set during the Napoleonic wars. A James Norrington type main character, really missed opportunity to have a Will Turner instead. But Temeraire the dragon stole the show and was an absolute delight to read.
 
+_A Letter to the Luminous Deep_ by Sylvie Cathrall (2/5 ⭐):
+
 ### Favorite Quotes from Monthly Reads
 
 **From _Book Title_**
