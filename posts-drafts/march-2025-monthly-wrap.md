@@ -3,7 +3,7 @@ title: "Books & Bookish Thoughts: March 2025 Edition"
 date: "2025-04-01"
 ---
 
-This month I got to some highly anticipated reads, including a new 2025 release that didn't disappoint. I enjoyed a mix of books with serious tones and some lighter reads as well, giving me a good variety of stories to explore. With an average rating of 4/5, this has been my best reading month of the year so far!
+This month I got to some highly anticipated reads, including a new 2025 release that didn't disappoint. I enjoyed a mix of books with serious tones and some lighter reads as well, giving me a good variety of stories to explore. With an average rating of 4/5, this has been my best reading month of the year so far!!
 
 ### March Reads in Detail
 
