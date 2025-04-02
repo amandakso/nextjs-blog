@@ -1,25 +1,23 @@
 ---
-title: "month-year-monthly-wrap.md"
+title: "Books & Bookish Thoughts: March 2025 Edition"
 date: "2025-04-01"
 ---
 
-This month I got to some highly anticipated reads including a new release from this year. Books with serious tones but also some quicker reads as well. Good variety of reads this month. One book I def should have dnf'ed but other than that some solid reads.
+This month I got to some highly anticipated reads, including a new 2025 release that didn't disappoint. I enjoyed a mix of books with serious tones and some lighter reads as well, giving me a good variety of stories to explore. With an average rating of 4/5, this has been my best reading month of the year so far!
 
-### Monthly Reads in Detail
+### March Reads in Detail
 
-#### Reading Stats
+#### Reading at a Glance
 
-Books Read: 6  
-Average Rating:  
-Favorite Book of the Month: _The Warm Hands of Ghosts_
-Honorable Mention: _Emily Wilde's Compendium of Lost Tales_
-Genre Breakdown: 3 Fantasy, 1 Historical Fiction, 1 General Fiction, 1 Literary Fiction
+Books Read: 8  
+Average Rating: 4  
+Favorite Book of the Month: _The Warm Hands of Ghosts_  
+Honorable Mentions: _Emily Wilde's Compendium of Lost Tales_, _First Love Language_  
+Genre Breakdown: 4 Fantasy, 1 Historical Fiction, 1 General Fiction, 1 Literary Fiction, 1 Romance
 
-#### Book Ratings & Mini Reviews
+#### Between the Pages: Reviews & Reflections
 
-_Book Title_ by Author (X/5 ⭐):
-
-_The Lies of Locke Lamora_ by Scott Lynch (4/5 ⭐):
+_The Lies of Locke Lamora_ by Scott Lynch (4/5 ⭐):  
 Intricate, engaging heist novel with dual timelines that complement the story's plot. Well-crafted characters and storyline that left me satisfied with the standalone experience, though personal triggers prevent me from continuing the series.
 
 _The Warm Hands of Ghosts_ by Katherine Arden (5/5 ⭐):  
@@ -31,19 +29,19 @@ A satisfying conclusion to one of my favorite cozy fantasy series. Masterfully b
 _Us Against You_ by Fredrik Backman (4.25/5 ⭐):  
 Explores the fallout from Beartown's tragic events through the complex responses of various townspeople, delivered with blunt yet poignant prose. The third-person narrative hints at future outcomes, creating an effectively foreboding atmosphere. Tackles complex issues including misogyny, homophobia, grief, death, assault, and team mentality in an unflinching manner that resonates deeply.
 
-_We'll Prescribe You a Cat_ by Syou Ishida (3.5/5 ⭐):
-A Japanese translated work with people seeking out a clinic to solve their problems. The clinic uses an unorthodox method of prescribing cats and we follow the stories of how their lives improve. The wholesome message while not necessarily self help advice presented an encouraging story. However I was most captivated by the magical realism and mystery of the clinic moreso than the people's stories.
+_We'll Prescribe You a Cat_ by Syou Ishida (3.5/5 ⭐):  
+This Japanese translated work follows people seeking help at a unique clinic that prescribes cats as an unorthodox treatment method. While the wholesome message presents an encouraging story, I was most captivated by the magical realism and mystery surrounding the clinic rather than the individual character stories.
 
-_His Majesty's Dragon_ by Naomi Novik (4/5 ⭐):
-A really fun dragon book set during the Napoleonic wars. A James Norrington type main character, really missed opportunity to have a Will Turner instead. But Temeraire the dragon stole the show and was an absolute delight to read.
+_His Majesty's Dragon_ by Naomi Novik (4/5 ⭐):  
+A really fun dragon book set during the Napoleonic wars. The main character feels like a James Norrington type—a missed opportunity for a more compelling Will Turner figure instead. However, Temeraire the dragon absolutely steals the show and was an absolute delight to read.
 
-_A Letter to the Luminous Deep_ by Sylvie Cathrall (2/5 ⭐):
+_A Letter to the Luminous Deep_ by Sylvie Cathrall (2/5 ⭐):  
+I should have DNF'ed this book. The premise initially grabbed me, but the execution fell flat. The epistolary format ended up as a collection of intriguing ideas drowning in overwritten prose and structural problems—a frustrating case of potential squandered by poor execution.
 
-### Favorite Quotes from Monthly Reads
+_First Love Language_ by Stefany Valentine (4.25/5 ⭐):  
+Ended the month on a sweet note with this YA contemporary romance. Initially drawn by the stunningly pretty cover, I found the inside matched with a cute story that explores coming-of-age themes and racial identity alongside the romance.
 
-**From _Book Title_**
-
-"Book Quote"
+### March Memorable Quotes
 
 **From _The Warm Hands of Ghosts_**
 
